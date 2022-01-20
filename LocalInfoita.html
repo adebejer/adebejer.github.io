@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleLI.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/choicePage.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <!-- <script src="app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topBar">
+        <div id="back" onclick="location.href='LocalInfoita.html'"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true"></i></div> <!--Back icon-->
+        <div id="home" onclick="location.href='mainPageita.html'"><i class="fa fa-home fa-5x icon" aria-hidden="true"></i></div> <!--Home icon-->
+    </div>
+
+    <div class="sideBar">
+        <button class="church" id="church"><i class="fas fa-church fa-5x icon" aria-hidden="true"></i></button>
+        <button class="convenience" id="convenience"><i class="fas fa-shopping-cart fa-5x icon" aria-hidden="true"></i></button>
+        <button class="park" id="park"><i class="fas fa-tree fa-5x icon" aria-hidden="true"></i></button>
+        <button class="health" id="health"><i class="fas fa-first-aid fa-5x icon" aria-hidden="true"></i></button>
+        <button class="petrol" id="petrol"><i class="fas fa-gas-pump fa-5x icon" aria-hidden="true"></i></button>
+        <button class="police" id="police"><i class="fab fa-product-hunt fa-5x icon" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="mainArea" id="churchMain" style="display: block;">
+        <header style="left:35%">Chiesa</header>
+        <img class="churchMap" src="LocalInfoMaps\Church_Map_English_Cropped.png" alt="Rabat">
+        <img class="churchPic" src="LocalInfoMaps/church.png" alt="Rabat">
+    </div>
+
+    <div class="mainArea" id="convenienceMain" style="display: none;">
+        <header style="left:25%">Negozio di convenienza</header>
+        <img class="convenienceMap" src="LocalInfoMaps/Convenience_Shops_Map_English__Maltese_Cropped_1.png" alt="Rabat">
+        <img class="conveniencePic" src="LocalInfoMaps/The-Convenience-Shop.jpg" alt="Rabat">
+    </div>
+
+    <div class="mainArea" id="parkMain" style="display: none;">
+        <header style="left:40%">Parco</header>
+        <img class="parkMap" src="LocalInfoMaps/Park_Map_Cropped.png" alt="Rabat">
+        <img class="parkPic" src="LocalInfoMaps/rabatPark.jpg" alt="Rabat">
+    </div>
+
+    <div class="mainArea" id="healthMain" style="display: none;">
+        <header style="left:25%">Centro benessere</header>
+        <img class="healthMap" src="LocalInfoMaps/Health_Centre_Map_English__Maltese_Cropped.png" alt="Rabat">
+        <img class="healthPic" src="LocalInfoMaps/healthCentre.jpg" alt="Rabat">
+    </div>
+
+    <div class="mainArea" id="petrolMain" style="display: none;">
+        <header style="left:25%">Stazione di rifornimento</header>
+        <img class="petrolMap" src="LocalInfoMaps/Petrol_Station_Map_English__Maltese_Cropped.png" alt="Rabat">
+        <img class="petrolPic" src="LocalInfoMaps/petrolStation.jpg" alt="Rabat">
+    </div>
+
+    <div class="mainArea" id="policeMain" style="display: none;">
+        <header style="left:25%">Stazione di polizia</header>
+        <img class="policeMap" src="LocalInfoMaps/Police_Station_Map_English__Maltese_Cropped.png" alt="Rabat">
+        <img class="policePic" src="LocalInfoMaps/policStation.jpg" alt="Rabat">
+    </div>
+
+    <div class="bottombar">
+        <span id="ct"></span>
+        <span id="cd"></span>
+        <span id="temp"></span>
+    </div>
+
+      <script src="appLI.js"></script>
+</body>
+</html>

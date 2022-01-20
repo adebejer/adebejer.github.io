@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleHS.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/choicePage.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <!-- <script src="app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topBar">
+        <div id="back" onclick="location.href='HistoricalSitesmlt.html'"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true"></i></div> <!--Back icon-->
+        <div id="home" onclick="location.href='mainPagemlt.html'"><i class="fa fa-home fa-5x icon" aria-hidden="true"></i></div> <!--Home icon-->
+    </div>
+
+    <div class="sideBar">
+        <button class="museum" id="museum">Mużewijiet</button>
+        <button class="catacombs" id="catacombs">Katakombi</button>
+    </div>
+
+    <!-- OVERVIEW PAGE  -->
+    <div class="mainArea" id="Overview" style="display: block;">
+        <header class="OverviewTitle">Ħarsa ġenerali</header>
+        <p class="text par1OV">Jinsabu fir-reġjun tal-punent-ċentru ta’ Malta, ir-Rabat huwa wieħed mill-ibliet l-aktar storikament importanti li wieħed jista’ jsib f’Malta.</p>
+        <p class="text par2OV">L-ewwel u qabel kollox, ir-Rabat huwa meqjus minn ħafna bħala l-post fejn twieled il-Kristjaneżmu f’Malta. Ir-raġuni għal dan hija li, ħafna jemmnu li r-Rabat kien il-post ta’ residenza ta’ San Pawl matul iż-żjara tiegħu ta’ tliet xhur f’Malta (fejn il-post speċifiku li qagħad, huwa magħruf bħala ‘Grotta ta’ San Pawl, li hija disponibbli għall-pubbliku ġenerali biex iżuru llum il-ġurnata. ). Biex ma nsemmux li r-Rabat fih numru ta’ katakombi (inkluż il-Katakombi ta’ San Pawl u l-Katakombi ta’ Sant’Agata), li nbnew fi żmien il-kontroll tal-Italja fuq Malta.</p>
+        <p class="text par3OV">Malta kienet ukoll taħt il-kontroll tal-Għarab għal aktar minn 200 sena (mit-870 WK sal-1090 WK). Dan kien evidenti b’mod speċjali fil-każ tar-Rabat minħabba l-fatt li r-Rabat għadda minn espansjoni fl-art, riżultat li l-belt ġirien tagħha l-Imdina tnaqqas il-ħitan tagħha.</p>
+        <img class="Overview" src="images/overview.jpg" alt="Rabat">
+        <p class="text par4OV">Fil-ġurnata u l-età tal-lum, b’aktar minn ħdax-il elf ruħ jgħixu fir-Rabat, din il-belt hija aktar minn sempliċi rakkont storiku, iżda għandha ħafna affarijiet x’tagħmel u tesplora!</p>
+    </div> 
+
+    <!-- OPTIONS PAGES -->
+    <!-- MUSEUM SELECTION   -->
+    <div class="mainArea" id="museumsSelection" style="display: none;">
+        <header class="selectionHeader">Mużewijiet</header>
+
+        <div class="container">
+            <button class="buttons btn1" id="WignacourtMuseumClick">
+                <div class="card">
+                    <img class="image img1" src="images/Wignacourt-Museum.jpg">
+                    <h2>Wignacourt Museum</h2>
+                </div>
+            </button>
+            <button class="buttons btn2" id="DomusRomanaClick">
+                <div class="card">
+                    <img class="image img2" src="images/DomusRomana1.jpg">
+                    <h2>Domus Romana</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+    <!-- CATACOMBS SELECITON  -->
+    <div class="mainArea" id="catacombsSelection" style="display: none;">
+        <header class="selectionHeader">Katakombi</header>
+
+        <div class="container">
+            <button class="buttons btn1" id="AgathasCatacombsClick">
+                <div class="card">
+                    <img class="image img1" src="images\AbbatijaTadDejr.jpg">
+                    <h2>Saint Agatha's Catacombs</h2>
+                </div>
+            </button>
+            <button class="buttons btn2" id="PaulsCatacombsClick">
+                <div class="card">
+                    <img class="image img2" src="images\StPaulsCatacombs.jpg">
+                    <h2>St Paul’s Catacombs</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- MUSEUM INFO PAGES  -->
+    <!-- WIGNAVOUR MUSEUM -->
+    <div class="mainArea" id="Wignacourt-Museum" style="display: none;">
+        <img class="WignacourMuseum" src="images/Wignacourt-Museum.jpg" alt="Wignacourt Museum">
+        <header>Wignacourt Museum</header>
+        <p class="text par1WM">Il-Mużew ta’ Wignacourt qabel kien iservi ta’ abitazzjoni għall-membri tal-kleru li jappartjenu lill-ordni ta’ San Ġwann. Il-bini innifsu nbena fis-seklu tmintax, l-arkitettura tagħha tieħu ispirazzjoni kbira mill-era barokka.</p>
+        <p class="text par2WM">Imsemmi għall-Gran Mastru Alof de Wignacourt (li ħakmu fuq Malta mill-1601 sal-1622 A.D), il-mużew huwa maqsum fi tliet livelli.</p>
+        <p class="text par3WM">Il-livell ta’ taħt l-art huwa ta’ interess kbir għal ħafna minħabba l-importanza storika tiegħu matul iż-żminijiet. L-ewwel nett, dan il-livell huwa konness mal-Grotta ta’ San Pawl, li hija fejn kien jgħix San Pawl stess waqt iż-żjara tiegħu f’Malta (60 A.D). It-tieni, l-ipoġea fi ħdanha (li kienu ta’ natura Punika, Rumana u Nisranija) intużaw bħala xelters għall-attakki bl-ajru matul it-Tieni Gwerra Dinjija. </p>
+        <img class="WignacourMuseum1" src="images\Wignacourt_Museum-e1546703852443.jpg" alt="Saint Pauls Catacombs">
+        <p class="text par4WM">Is-sular ta’ taħt jikkonsisti f’xi kollezzjonijiet minuri, kif ukoll ġnien grandjuż li darba kellu ġewwa fih is-sala tal-ikel tal-membri tal-kleru.</p>
+        <p class="text par5WM">L-ewwel sular huwa l-ispazju ewlieni tal-wirjiet, fejn wieħed jista’ jsib numru ta’ pitturi magħmula minn artisti Ewropej u Maltin (bħal Mattia Preti u Antoine Favray), kif ukoll kollezzjoni ta’ Silver Spanjol, Taljan, u Maltin li jvarjaw mis-sbatax. sa seklu dsatax. </p>
+
+        <!-- <button class="goToLocWM" id="goToLocWM">Żur il-post</button> -->
+        <img class="WignacourMuseumMap" src="images/The_Wignacourt_Museum_Map_Cropped.png" alt="Saint Pauls Catacombs">
+        <p class="text fillWM"></p>
+
+    </div>
+
+    <!-- ROMAN MUSEUM  -->
+    <div class="mainArea" id="Domus-Romana" style="display: none;">
+        <img class="DomusRomana" src="images/DomusRomana1.jpg" alt="Domus Romana">
+        <header class="DomusRomanaHeader">Domus Romana</header>
+        <p class="text par1DM">Id-Domus Romana (jew Domvs Romana) kienet oriġinarjament townhouse ta’ stil Ruman għal nobbli Ruman. Ir-residenza nfisha nbniet fl-ewwel seklu QK, u baqgħet tintuża sat-tieni seklu AD (madwar 300 sena).</p>
+        <p class="text par2DM">Madankollu, l-affarijiet ħadu l-agħar għad-dar Rumana. Dan kien dovut l-aktar għall-fatt li matul is-seklu ħdax, fl-istess post twaqqaf ċimiterju Musulman fejn kien hemm il-fdalijiet tad-residenza Rumana.</p>
+        <p class="text par3DM">Bħala riżultat, l-iskoperta mill-ġdid tad-Domus Romana fl-1881 ma tatx ħafna artifatti. Fil-fatt, l-attrazzjoni ewlenija minn dawn il-fdalijiet kienu l-mużajk ta’ stil Ellenistiku li kienu jintużaw għat-tiżjin u biex juru xeni mitoloġiċi. Oġġetti oħra li nħarġu għad-dawl kienu jinkludu muniti, oġġetti tal-mejda, u aċċessorji tal-banju.</p>
+        <img class="DomusRomana1" src="images/DomusRoamana2.png" alt="Saint Pauls Catacombs">
+        <p class="text par4DM">Sa mill-1882, dan is-sit storiku sar disponibbli għall-pubbliku ġenerali f’forma ta’ mużew. Waħda mir-raġunijiet għaliex il-mużew ġie stabbilit fl-ewwel lok, kien sabiex il-mużajk ikunu jistgħu jiġu ppreservati aħjar.</p>
+        
+        <!-- <button class="goToLocDM" id="goToLocDM">Żur il-post</button> -->
+        <img class="DomusRomanaMap" src="images/Domvs_Romana_Map_Cropped_1.png">
+        <p class="text fillDM"></p>
+    </div> 
+    <!-- CATACOMBS INFO PAGES  -->
+    <!-- SAINTS PAULS CATACOMBS -->
+    <div class="mainArea" id="Saint-Pauls-Catacombs" style="display: none;">
+        <img class="StPaulsCatacombs" src="images/StPaulsCatacombs.jpg" alt="Saint Pauls Catacombs">
+        <header>Saint Pauls Catacombs</header>
+        <!-- <div class="textarea"> -->
+            <p class="text par1SPC">Il-Katakombi ta’ San Pawl iservu bħala wieħed mill-aktar siti storiċi importanti f’Malta fejn tidħol l-arkeoloġija Nisranija.</p>
+            <p class="text par2SPC">Sa mill-bidu tat-tielet seklu, dawn il-katakombi servew bħala postijiet ta’ dfin għall-poplu Puniku u Ruman ta’ dak iż-żmien, sat-tmien seklu.</p>
+            <p class="text par3SPC">Iż-żona ewlenija tas-sit tikkonsisti f’ħafna oqbra u passaġġi interkonnessi, li jkopru żona akbar minn elfejn metru kwadru. Dan jagħmel il-Katakombi ta’ San Pawl l-akbar katakombi skoperti f’Malta s’issa..</p>
+            <img class="StPaulsCatacombs1" src="images/StPaulsCatacombs2.jpg" alt="Saint Pauls Catacombs">
+            <p class="text par4SPC">Fost il-ħafna tipi ta’ dfin li jistgħu jinstabu f’dan in-netwerk, l-aktar tip ta’ dfin prevalenti huwa dak tal-oqbra ‘baldacchino’, li jinfluwenzaw ħafna l-kurituri ewlenin ta’ dan in-netwerk. Dawn l-oqbra bħal dawn kellhom erba’ pilastri għall-appoġġ, li jiffurmaw arkati fuq kull naħa tal-qabar.</p>
+            <p class="text par5SPC">Fl-aħħar nett, dawn il-katakombi huma mifnija b’illustrazzjonijiet u messaġġi miktuba b’żebgħa ħamra.</p>
+            
+            <!-- <button class="goToLocSPC" id="goToLocSPC">Żur il-post</button> -->
+            <img class="StPaulsCatacombsMap" src="images/St_Paul_Catacombs_Map_Cropped.png">
+            <p class="text fillSPC"></p>
+    </div>  
+    <!-- SAINTS AGATHAS CATACOMBS -->
+    <div class="mainArea" id="Saint-Agathas-Catacombs" style="display: none;">
+        <img class="SaintAgathasCatacombs" src="images/StAgathaCatacombs1.jpg" alt="Saint Pauls Catacombs">
+        <header>Saint Agatha's Catacombs</header>
+        <!-- <div class="textarea"> -->
+        <p class="text par1SAC">Li jmorru lura għat-tielet seklu, il-Katakombi ta’ Sant’ Agata kienu jintużaw bħala ċimiterji taħt l-art għall-Pagani, Lhud, u Kristjani, kull wieħed bis-sezzjonijiet magħżula tagħhom stess.</p>
+        <p class="text par2SAC">Filwaqt li l-Katakombi ta’ San Pawl jippretendu li huma l-akbar katakombi li nsibu f’Malta, dan jgħodd biss meta titqies iż-żona li hija aċċessibbli għall-pubbliku ġenerali. Fil-fatt, il-Katakombi ta’ Sant’ Agata huma d-doppju tal-Katakombi ta’ San Pawl, iżda ħafna taqsimiet li fihom pitturi murali affreski ingħalqu biex ma ssirilhomx ħsara.</p>
+        <p class="text par3SAC">Madankollu, ċerti sezzjonijiet li fihom murals li huma kemmxejn mhux kompluti/skonnettjati, għadhom disponibbli għall-pubbliku ġenerali biex jarahom.</p>
+        <img class="SaintAgathasCatacombs1" src="images/StAgathaCatacombs2.jpg" alt="Saint Pauls Catacombs">
+        <p class="text par4SAC">Fost il-ħafna tipi ta' oqbra li jistgħu jiltaqgħu magħhom fil-Katakombi ta' Sant' Agata, wieħed mit-tipi l-aktar importanti huwa dak tal-"mejda bil-kanopi b'dahar tas-sarġ". Qabar bħal dan kien ikollu l-parti ta’ fuq tiegħu tieħu l-forma ta’ dahar ta’ sarġ, u jkollu wkoll baldakin (għatu mdendel fuq il-qabar) li jkun sostnut minn erba’ pilastri.</p>
+        
+        <!-- <button class="goToLocSAC" id="goToLocSAC">Żur il-post</button> -->
+        <img class="SaintAgathasCatacombsMap" src="images/St_Agatha_Catacombs_Map_Cropped.png">
+        <p class="text fillSAC"></p>
+    </div>
+
+
+
+    <div class="bottombar">
+        <span id="ct"></span>
+        <span id="cd"></span>
+        <span id="temp"></span>
+    </div>
+
+      <script src="appHS.js"></script>
+</body>
+</html>

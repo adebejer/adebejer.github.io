@@ -1,0 +1,307 @@
+body{
+    background-color: #D0DBFF;
+    color: white;
+    font-family: sans-serif;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    
+}
+
+
+.topbar{
+    width: 1080px;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.icon{
+    color: white;
+}
+
+#back{
+    position:fixed;
+    left: 10px;
+    top: 5px; 
+}
+
+#home{
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+
+.bottombar{
+    width: 1080px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom:0%;
+    left: 0%; 
+    font-size: 4vh;
+}
+
+#cd{
+    position: relative;
+    left: 150px;
+}
+
+#temp{
+    position: fixed;
+    right: 5px;
+}
+
+.sideBar {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+    left: 0px;
+    top: 100px;
+    background: #15223B;
+}
+
+.mainArea {
+    position: fixed;
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 720px;
+    height: 85%;
+    left: 360px;
+    top: 100px;
+    background: #D0DBFF;
+}
+
+.routes {
+    position: absolute;
+    top: 20%;
+    font-size: 3vh;
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sites {
+    position: absolute;
+    top: 50%;
+    font-size: 3vh;
+    font-weight: 100px;
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    margin: 10%;
+    border-radius: 20px;
+    background: #D0DBFF;
+}
+
+.routebtn1{
+    position: absolute;
+    left:25px;
+    width: 200px;
+    font-size: 5vh;
+    font-weight: bold; 
+    color: white;
+    background-color: #15223B;
+}
+.routebtn2{
+    position: absolute;
+    left:350px;
+    width: 200px;
+    font-size: 5vh;
+    font-weight: bold; 
+    color: white;
+    background-color: #15223B;
+}
+
+#btn1{
+    top: 200px;
+}
+
+#btn2{
+    top: 500px;
+}
+
+#btn3{
+    top: 800px;
+}
+
+#btn4{
+    top: 1100px;
+}
+
+.sitebtn{
+    position: absolute;
+    left:75px;
+    width: 400px;
+    font-size: 3vh;
+    font-weight: bold; 
+    color: white;
+    background-color: #15223B;
+}
+
+#stbtn1{
+    top: 200px;
+}
+
+#stbtn2{
+    top: 500px;
+}
+
+#stbtn3{
+    top: 800px;
+}
+
+#stbtn4{
+    top: 1100px;
+}
+
+
+
+.routeHeader{
+    position: fixed;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #15223B;
+    left: 475px;
+    top: 150px;
+}
+
+.siteHeader{
+    position: fixed;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #15223B;
+    left: 600px;
+    top: 150px;
+}
+
+.busrouteheader{
+    position:fixed;
+    background-color: #15223B;
+    width: 720px;
+    height: 100px;
+    left: 360px;
+}
+
+.busrouteheader h2{
+    font-size: 2vh;
+    text-align: center;
+}
+
+.days{
+    position:absolute;
+    background-color: #15223B;
+    width: 400px;
+    height: 100px;
+    top: 200px;
+    right: 150px;
+    border-radius: 25px;
+}
+
+.days h2{
+    font-size: 2vh;
+    text-align: center;
+}  
+  
+.tblhd th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #15223B;
+    color: white;
+    text-align: center;
+  }
+
+.times{
+    width: 250px;
+    border-collapse: collapse;
+    height: 800px;
+    position: absolute;
+    top: 400px;
+    left:250px;
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.times td, .times th,.directions td,.directions th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+header {
+    position: absolute;
+    font-size: 5vh;
+    left: 75px;
+    top:50px;
+    line-height: 55px;
+    color: black;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+p2{
+    position: absolute;
+    font-size:2.5vh;
+    font-weight: bold;
+    color: black;
+    left: 50px;
+}
+
+.par1{
+    top: 400px;
+}
+
+.par2{
+    top:950px;
+}
+
+.directions{
+    width: 500px;
+    border-collapse: collapse;
+    height: 800px;
+    position: absolute;
+    top: 400px;
+    left:100px;
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.transp{
+    position:absolute;
+    background-color: #15223B;
+    width: 400px;
+    height: 100px;
+    top: 200px;
+    right: 175px;
+    border-radius: 25px;
+}
+
+.transp h2{
+    font-size: 2vh;
+    text-align: center;
+}  
+
+.siteheader{
+    position:fixed;
+    background-color: #15223B;
+    width: 720px;
+    height: 100px;
+    left: 360px;
+}
+
+.siteheader h2{
+    font-size: 2vh;
+    text-align: center;
+}

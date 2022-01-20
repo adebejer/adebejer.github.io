@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="transpPage.css"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>    
+      <title>Welcome to Rabat</title>
+      </head>
+      
+      
+<body onload=display_ct();>
+
+  <!--Top Bar-->
+  <div class="topbar">
+  <div id="back" onclick="location.href='transpPageita.html'"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true"></i></div> <!--Back icon-->
+  <div id="home" onclick="location.href='mainPageita.html'"><i class="fa fa-home fa-5x icon"  aria-hidden="true"></i></div> <!--Home icon-->
+</div>
+
+<!--Side Bar-->
+<div class="sideBar">
+    <button class="routes" id="routes" onclick="busselection()">Percorsi di autobus</button>
+    <button class="sites" id="sites" onclick="siteselection()">Siti</button>
+</div>
+
+
+<!--
+Overview page;
+will explain to the user that if they press bus routes 
+it will just give them bus information and maybe times
+and if they press sites they can choose specific sites to go to 
+-->
+<div class="mainArea" id="transpOverview">
+  <header>Trasporto</header>
+  <p2 class="par1">Per visualizzare le linee e gli orari degli autobus che passano per la fermata Rabat 3
+    si prega di consultare "Percorsi di autobus".
+  </p2>
+  <br>
+  <p2 class="par2">Per indicazioni su specifici siti storici, vedere "Siti"</p2>
+</div>
+
+
+
+
+<!--Bus Route Selection-->
+<div class="mainArea" id="busSelection" style="display: none;">
+    <header class="routeHeader">Percorsi di autobus</header>
+    <div class="container" id="choice1" onclick="choice1()">
+        <button class="routebtn1" id="btn1">50</button>
+    </div>
+    <div class="container" id="choice2" onclick="choice2()">
+        <button class="routebtn2" id="btn1">51</button>
+    </div>
+    <div class="container" id="choice3" onclick="choice3()">
+        <button class="routebtn1" id="btn2">52</button>
+    </div>
+    <div class="container" id="choice4" onclick="choice4()">
+        <button class="routebtn2" id="btn2">53</button>
+    </div>
+    <div class="container" id="choice5" onclick="choice5()">
+        <button class="routebtn1" id="btn3">56</button>
+    </div>
+    <div class="container" id="choice6" onclick="choice6()">
+        <button class="routebtn2" id="btn3">181</button>
+    </div>
+    <div class="container" id="choice7" onclick="choice7()">
+        <button class="routebtn1" id="btn4">182</button>
+    </div>
+</div>
+
+<div class="mainArea" id="siteSelection" style="display: none;">
+  <header class="siteHeader">Siti</header>
+  <div class="container" id="site1" onclick="site1()">
+      <button class="sitebtn" id="stbtn1">Wignacourt Museum</button>
+  </div>
+  <div class="container" id="site2" onclick="site2()">
+      <button class="sitebtn" id="stbtn2">Domus Romana</button>
+  </div>
+  <div class="container" id="site3" onclick="site3()">
+      <button class="sitebtn" id="stbtn3">St Pauls Catacombs</button>
+  </div>
+  <div class="container" id="site4" onclick="site4()">
+      <button class="sitebtn" id="stbtn4">St Agatha’s Catacombs</button>
+  </div>
+</div>
+
+<!--Route Info Pages-->
+<div class="mainArea" id="route50" style="display: none;">
+    <div class="busrouteheader"><h2>50  |  Valletta-Rabat</h2></div>
+    <div class="days"><h2>Lunedì-venerdì</h2></div>
+      <table class="times">
+        <tr class="tblhd">
+          <th>Orari di partenza</th>
+        </tr>
+        <tr><td>06:33</td></tr>
+        <tr><td>06:59</td></tr>         
+        <tr><td>07:19</td></tr>
+        <tr><td>07:39</td></tr>
+        <tr><td>07:59</td></tr>
+        <tr><td>08:19</td></tr>
+        <tr><td>08:39</td></tr>
+        <tr><td>08:59</td></tr>
+        <tr><td>09:19</td></tr>
+        <tr><td>16:29</td></tr>
+        <tr><td>16:59</td></tr>
+        <tr><td>17:29</td></tr>
+        <tr><td>17:59</td></tr>
+        <tr><td>18:29</td></tr>
+        </tr>
+      </table>
+</div>
+
+<div class="mainArea" id="route51" style="display: none;">
+  <div class="busrouteheader"><h2>51  |  Valletta-Mtarfa</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>06:13</td></tr>
+      <tr><td>06:43</td></tr>         
+      <tr><td>07:13</td></tr>
+      <tr><td>07:43</td></tr>
+      <tr><td>08:13</td></tr>
+      <tr><td>08:43</td></tr>
+      <tr><td>09:13</td></tr>
+      <tr><td>09:43</td></tr>
+      <tr><td>10:13</td></tr>
+      <tr><td>10:43</td></tr>
+      <tr><td>11:13</td></tr>
+      <tr><td>11:43</td></tr>
+      <tr><td>12:13</td></tr>
+      <tr><td>12:43</td></tr>
+      <tr><td>13:13</td></tr>
+      <tr><td>13:43</td></tr>
+      <tr><td>14:13</td></tr>
+      <tr><td>14:43</td></tr>
+      <tr><td>15:13</td></tr>
+      <tr><td>15:43</td></tr>
+      <tr><td>16:13</td></tr>
+      <tr><td>16:43</td></tr>
+      <tr><td>17:13</td></tr>
+      <tr><td>17:43</td></tr>
+      <tr><td>18:08</td></tr>
+      <tr><td>18:38</td></tr>
+      <tr><td>19:08</td></tr>
+      <tr><td>19:43</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="route52" style="display: none;">
+  <div class="busrouteheader"><h2>52  |  Valletta-Dingli</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>06:00</td></tr>
+      <tr><td>06:30</td></tr>         
+      <tr><td>07:00</td></tr>
+      <tr><td>07:30</td></tr>
+      <tr><td>08:01</td></tr>
+      <tr><td>08:31</td></tr>
+      <tr><td>09:01</td></tr>
+      <tr><td>09:30</td></tr>
+      <tr><td>10:00</td></tr>
+      <tr><td>10:30</td></tr>
+      <tr><td>11:00</td></tr>
+      <tr><td>11:31</td></tr>
+      <tr><td>12:01</td></tr>
+      <tr><td>12:31</td></tr>
+      <tr><td>13:01</td></tr>
+      <tr><td>13:31</td></tr>
+      <tr><td>14:01</td></tr>
+      <tr><td>14:31</td></tr>
+      <tr><td>15:01</td></tr>
+      <tr><td>15:31</td></tr>
+      <tr><td>16:01</td></tr>
+      <tr><td>16:31</td></tr>
+      <tr><td>17:01</td></tr>
+      <tr><td>17:31</td></tr>
+      <tr><td>18:01</td></tr>
+      <tr><td>18:31</td></tr>
+      <tr><td>19:01</td></tr>
+      <tr><td>19:31</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="route53" style="display: none;">
+  <div class="busrouteheader"><h2>53  |  Valletta-Rabat Virtu</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>05:57</td></tr>
+      <tr><td>06:27</td></tr> 
+      <tr><td>06:57</td></tr>         
+      <tr><td>07:27</td></tr>
+      <tr><td>07:57</td></tr>
+      <tr><td>08:29</td></tr>
+      <tr><td>08:59</td></tr>
+      <tr><td>09:18</td></tr>
+      <tr><td>10:18</td></tr>
+      <tr><td>11:18</td></tr>
+      <tr><td>12:18</td></tr>
+      <tr><td>13:27</td></tr>
+      <tr><td>14:29</td></tr>
+      <tr><td>15:29</td></tr>
+      <tr><td>16:29</td></tr>
+      <tr><td>17:29</td></tr>
+      <tr><td>18:27</td></tr>
+      <tr><td>19:11</td></tr>
+      <tr><td>20:11</td></tr>
+      <tr><td>21:11</td></tr>
+      <tr><td>22:11</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="route56" style="display: none;">
+  <div class="busrouteheader"><h2>56  |  Valletta-Dingli</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>09:56</td></tr>
+      <tr><td>10:56</td></tr> 
+      <tr><td>11:56</td></tr>         
+      <tr><td>13:01</td></tr>
+      <tr><td>14:01</td></tr>
+      <tr><td>15:01</td></tr>
+      <tr><td>16:01</td></tr>
+      <tr><td>17:03</td></tr>
+      <tr><td>18:03</td></tr>
+      <tr><td>19:03</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="route181" style="display: none;">
+  <div class="busrouteheader"><h2>181  |  Mater Dei-Dingli</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>06:37</td></tr>
+      <tr><td>07:42</td></tr> 
+      <tr><td>08:37</td></tr>         
+      <tr><td>09:37</td></tr>
+      <tr><td>10:42</td></tr>
+      <tr><td>11:42</td></tr>
+      <tr><td>12:42</td></tr>
+      <tr><td>13:42</td></tr>
+      <tr><td>14:44</td></tr>
+      <tr><td>16:44</td></tr>
+      <tr><td>17:44</td></tr>
+      <tr><td>18:42</td></tr>
+      <tr><td>19:37</td></tr>
+      <tr><td>20:34</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="route182" style="display: none;">
+  <div class="busrouteheader"><h2>182  |  Mater Dei-Mtarfa</h2></div>
+  <div class="days"><h2>Lunedì-venerdì</h2></div>
+    <table class="times">
+      <tr class="tblhd">
+        <th>Orari di partenza</th>
+      </tr>
+      <tr><td>07:07</td></tr> 
+      <tr><td>08:11</td></tr>         
+      <tr><td>09:07</td></tr>
+      <tr><td>10:07</td></tr>
+      <tr><td>11:07</td></tr>
+      <tr><td>12:07</td></tr>
+      <tr><td>13:07</td></tr>
+      <tr><td>14:11</td></tr>
+      <tr><td>15:17</td></tr>
+      <tr><td>16:17</td></tr>
+      <tr><td>17:17</td></tr>
+      <tr><td>18:17</td></tr>
+      <tr><td>19:11</td></tr>
+      <tr><td>20:00</td></tr>
+      <tr><td>21:00</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="wcm" style="display: none;">
+  <div class="siteheader"><h2>Wignacourt Museum</h2></div>
+  <div class="transp"><h2>6 min a piedi (450 m)</h2></div>
+    <table class="directions">
+      <tr class="tblhd">
+        <th>Indicazioni</th>
+      </tr>
+      <tr><td>Dirigiti a nord-ovest verso Triq San Pawl</td></tr> 
+      <tr><td>Svoltare a destra verso Triq San Pawl</td></tr>         
+      <tr><td>Svolta a sinistra in Triq San Pawl</td></tr>
+      <tr><td>Svoltare a sinistra verso College Street</td></tr>
+      <tr><td>Svolta a sinistra in Via del Collegio</td></tr>
+      <tr><td>Arrivo a destinazione</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="dr" style="display: none;">
+  <div class="siteheader"><h2>Domus Romana</h2></div>
+  <div class="transp"><h2>2 min a piedi (140 m)</h2></div>
+    <table class="directions">
+      <tr class="tblhd">
+        <th>Indicazioni</th>
+      </tr>
+      <tr><td>Dirigiti a nord-ovest verso Triq San Pawl</td></tr> 
+      <tr><td>Svoltare a destra verso Triq San Pawl</td></tr>         
+      <tr><td>Svolta a destra in Triq San Pawl</td></tr>
+      <tr><td>Alla rotonda, prendi la 1a uscita su Wesgha tal-Muzew</td></tr>
+      <tr><td>Uscire alla rotonda su Wesgha tal-Muzew</td></tr>
+      <tr><td>Arrivo a destinazione</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="spc" style="display: none;">
+  <div class="siteheader"><h2>St Paul's Catacombs</h2></div>
+  <div class="transp"><h2>8 min a piedi (650 m)</h2></div>
+    <table class="directions">
+      <tr class="tblhd">
+        <th>Indicazioni</th>
+      </tr>
+      <tr><td>Dirigiti a nord-ovest verso Triq San Pawl</td></tr> 
+      <tr><td>Svoltare a destra verso Triq San Pawl</td></tr>         
+      <tr><td>Svolta a sinistra in Triq San Pawl</td></tr>
+      <tr><td>Svoltare a sinistra verso Bajjada Triq Sant Agata</td></tr>
+      <tr><td>Alla Confetteria Parruccan proseguire per Bajjada Triq Sant Agata</td></tr>
+      <tr><td>Arrivo a destinazione</td></tr>
+      </tr>
+    </table>
+</div>
+
+<div class="mainArea" id="sac" style="display: none;">
+  <div class="siteheader"><h2>St Agatha's Catacombs</h2></div>
+  <div class="transp"><h2>8 min a piedi (650 m)</h2></div>
+    <table class="directions">
+      <tr class="tblhd">
+        <th>Indicazioni</th>
+      </tr>
+      <tr><td>Dirigiti a nord-ovest verso Triq San Pawl</td></tr> 
+      <tr><td>Svoltare a destra verso Triq San Pawl</td></tr>         
+      <tr><td>Svolta a sinistra in Triq San Pawl</td></tr>
+      <tr><td>Svoltare a sinistra verso Bajjada Triq Sant Agata</td></tr>
+      <tr><td>Alla Confetteria Parruccan proseguire per Bajjada Triq Sant Agata</td></tr>
+      <tr><td>Arrivo a destinazione</td></tr>
+      </tr>
+    </table>
+</div>
+
+
+ <!--Bottom Bar-->
+ <div class="bottombar">
+    <span id='ct' ></span>
+    <span id='cd' ></span>
+    <span id="temp"></span>
+  </div>
+  
+    <script src="mainPage.js"></script>
+  
+  </body>
+  </html>

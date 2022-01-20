@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleHS.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/choicePage.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <!-- <script src="app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topBar">
+        <div id="back" onclick="location.href='HistoricalSitesita.html'"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true"></i></div> <!--Back icon-->
+        <div id="home" onclick="location.href='mainPageita.html'"><i class="fa fa-home fa-5x icon" aria-hidden="true"></i></div> <!--Home icon-->
+    </div>
+
+    <div class="sideBar">
+        <button class="museum" id="museum">Museo</button>
+        <button class="catacombs" id="catacombs">Catacombe</button>
+    </div>
+
+    <!-- OVERVIEW PAGE  -->
+    <div class="mainArea" id="Overview" style="display: block;">
+        <header class="OverviewTitle">Panoramica</header>
+        <p class="text par1OV">Situata nella regione centro-occidentale di Malta, Rabat è una delle città storicamente più importanti che si possano trovare a Malta.</p>
+        <p class="text par2OV">Innanzitutto, Rabat è considerata da molti la culla del cristianesimo a Malta. La ragione di ciò è che, molti credono che Rabat fosse il luogo di residenza di San Paolo durante i suoi tre mesi di soggiorno a Malta (dove il luogo specifico in cui soggiornò, è noto come "Grotta di San Paolo, che oggi è disponibile per il grande pubblico ). Per non parlare del fatto che Rabat contiene un certo numero di catacombe (tra cui le Catacombe di San Paolo e le Catacombe di Sant'Agata), che furono costruite durante il controllo italiano su Malta.</p>
+        <p class="text par3OV">Malta è stata anche sotto il controllo degli arabi per più di 200 anni (dall'870 d.C. al 1090 d.C.). Ciò è stato particolarmente evidente nel caso di Rabat a causa del fatto che Rabat ha subito un'espansione della terra, a causa del fatto che la sua vicina città di Mdina ha ridimensionato le sue mura. </p>
+        <img class="Overview" src="images/overview.jpg" alt="Rabat">
+        <p class="text par4OV">Al giorno d'oggi, con oltre undicimila persone che vivono a Rabat, questa città è più di un semplice racconto storico, ma ha molte cose da fare ed esplorare!</p>
+    </div> 
+
+    <!-- OPTIONS PAGES -->
+    <!-- MUSEUM SELECTION   -->
+    <div class="mainArea" id="museumsSelection" style="display: none;">
+        <header class="selectionHeader">Musei</header>
+
+        <div class="container">
+            <button class="buttons btn1" id="WignacourtMuseumClick">
+                <div class="card">
+                    <img class="image img1" src="images/Wignacourt-Museum.jpg">
+                    <h2>Wignacourt Museum</h2>
+                </div>
+            </button>
+            <button class="buttons btn2" id="DomusRomanaClick">
+                <div class="card">
+                    <img class="image img2" src="images/DomusRomana1.jpg">
+                    <h2>Domus Romana</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+    <!-- CATACOMBS SELECITON  -->
+    <div class="mainArea" id="catacombsSelection" style="display: none;">
+        <header class="selectionHeader">Catacombe</header>
+
+        <div class="container">
+            <button class="buttons btn1" id="AgathasCatacombsClick">
+                <div class="card">
+                    <img class="image img1" src="images\AbbatijaTadDejr.jpg">
+                    <h2>Saint Agatha's Catacombs</h2>
+                </div>
+            </button>
+            <button class="buttons btn2" id="PaulsCatacombsClick">
+                <div class="card">
+                    <img class="image img2" src="images\StPaulsCatacombs.jpg">
+                    <h2>St Paul’s Catacombs</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- MUSEUM INFO PAGES  -->
+    <!-- WIGNAVOUR MUSEUM -->
+    <div class="mainArea" id="Wignacourt-Museum" style="display: none;">
+        <img class="WignacourMuseum" src="images/Wignacourt-Museum.jpg" alt="Wignacourt Museum">
+        <header>Wignacourt Museum</header>
+        <p class="text par1WM">Il Museo Wignacourt fungeva in passato da dimora per i membri del clero dell'ordine di San Giovanni. L'edificio stesso è stato costruito nel XVIII secolo, la sua architettura trae grande ispirazione dall'epoca barocca.</p>
+        <p class="text par2WM">Prende il nome dal Gran Maestro Alof de Wignacourt (che regnò su Malta dal 1601 al 1622 d.C.), il museo è suddiviso in tre livelli. </p>
+        <p class="text par3WM">Il livello sotterraneo è di grande interesse per molti per la sua importanza storica nel corso dei secoli. In primo luogo, questo livello è collegato alla Grotta di San Paolo, dove lo stesso San Paolo risiedette durante il suo soggiorno a Malta (60 d.C.). In secondo luogo, gli ipogei al suo interno (di natura punica, romana e cristiana) furono usati come rifugi antiaerei durante la seconda guerra mondiale. </p>
+        <img class="WignacourMuseum1" src="images\Wignacourt_Museum-e1546703852443.jpg" alt="Saint Pauls Catacombs">
+        <p class="text par4WM">Il piano terra è costituito da alcune raccolte minori, oltre al grande giardino che un tempo ospitava al suo interno la mensa dei membri del clero.</p>
+        <p class="text par5WM">Il primo piano è lo spazio espositivo principale, dove si possono trovare numerosi dipinti realizzati da artisti europei e maltesi (come Mattia Preti e Antoine Favray), oltre a una collezione di argenti spagnoli, italiani e maltesi che vanno dal XVII al diciannovesimo secolo.</p>
+
+        <!-- <button class="goToLocWM" id="goToLocWM">Go To Location</button> -->
+        <img class="WignacourMuseumMap" src="images/The_Wignacourt_Museum_Map_Cropped.png" alt="Saint Pauls Catacombs">
+        <p class="text fillWM"></p>
+
+    </div>
+
+    <!-- ROMAN MUSEUM  -->
+    <div class="mainArea" id="Domus-Romana" style="display: none;">
+        <img class="DomusRomana" src="images/DomusRomana1.jpg" alt="Domus Romana">
+        <header class="DomusRomanaHeader">Domus Romana</header>
+        <p class="text par1DM">La Domus Romana (o Domvs Romana) era originariamente una residenza in stile romanico per un nobile romano. La residenza stessa fu costruita nel I secolo aC, e rimase in uso fino al II secolo dC (circa 300 anni).</p>
+        <p class="text par2DM">Tuttavia, le cose presero una brutta piega per la casa romana. Ciò era dovuto principalmente al fatto che nel corso dell'XI secolo fu allestito un cimitero musulmano nello stesso luogo in cui sorgevano i resti della dimora romana.</p>
+        <p class="text par3DM">Di conseguenza, la riscoperta della Domus Romana nel 1881 non ha prodotto molti reperti. In effetti, l'attrazione principale di questi resti erano i mosaici in stile ellenistico che servivano per la decorazione e raffiguravano scene mitologiche. Altri manufatti portati alla luce includevano monete, stoviglie e accessori per il bagno.</p>
+        <img class="DomusRomana1" src="images/DomusRoamana2.png" alt="Saint Pauls Catacombs">
+        <p class="text par4DM">Dal 1882 questo sito storico è stato messo a disposizione del grande pubblico sotto forma di museo. Uno dei motivi per cui il museo è stato istituito in primo luogo è stato perché i mosaici potessero essere meglio conservati.</p>
+        
+        <!-- <button class="goToLocDM" id="goToLocDM">Go To Location</button> -->
+        <img class="DomusRomanaMap" src="images/Domvs_Romana_Map_Cropped_1.png">
+        <p class="text fillDM"></p>
+    </div> 
+    <!-- CATACOMBS INFO PAGES  -->
+    <!-- SAINTS PAULS CATACOMBS -->
+    <div class="mainArea" id="Saint-Pauls-Catacombs" style="display: none;">
+        <img class="StPaulsCatacombs" src="images/StPaulsCatacombs.jpg" alt="Saint Pauls Catacombs">
+        <header>Saint Pauls Catacombs</header>
+        <!-- <div class="textarea"> -->
+            <p class="text par1SPC">Le Catacombe di San Paolo sono uno dei siti storici più importanti di Malta quando si parla di archeologia cristiana.</p>
+            <p class="text par2SPC">Queste catacombe fungevano già dal III secolo come luogo di sepoltura per il popolo punico e romano dell'epoca, fino all'VIII secolo.</p>
+            <p class="text par3SPC">L'area principale del sito è costituita da numerose tombe e passaggi interconnessi, che coprono un'area superiore ai duemila metri quadrati. Questo rende le Catacombe di Saint Paul la più grande catacomba scoperta finora a Malta.</p>
+            <img class="StPaulsCatacombs1" src="images/StPaulsCatacombs2.jpg" alt="Saint Pauls Catacombs">
+            <p class="text par4SPC">Tra le numerose tipologie di sepoltura che si possono trovare all'interno di questa rete, la tipologia funeraria più prevalente è quella delle tombe a baldacchino, che influenzano notevolmente i corridoi principali di questa rete. Queste tombe di questo tipo avevano quattro pilastri di supporto, che formavano archi su ogni lato della tomba.</p>
+            <p class="text par5SPC">Infine, queste catacombe sono piene di illustrazioni e messaggi scritti con vernice rossa.</p>
+            
+            <!-- <button class="goToLocSPC" id="goToLocSPC">Go To Location</button> -->
+            <img class="StPaulsCatacombsMap" src="images/St_Paul_Catacombs_Map_Cropped.png">
+            <p class="text fillSPC"></p>
+    </div>  
+    <!-- SAINTS AGATHAS CATACOMBS -->
+    <div class="mainArea" id="Saint-Agathas-Catacombs" style="display: none;">
+        <img class="SaintAgathasCatacombs" src="images/StAgathaCatacombs1.jpg" alt="Saint Pauls Catacombs">
+        <header>Saint Agatha's Catacombs</header>
+        <!-- <div class="textarea"> -->
+        <p class="text par1SAC">Risalenti al III secolo, le Catacombe di Sant'Agata erano utilizzate come cimiteri sotterranei per pagani, ebrei e cristiani, ciascuno con le proprie sezioni designate. </p>
+        <p class="text par2SAC">Mentre le Catacombe di San Paolo affermano di essere le più grandi catacombe trovate a Malta, questo è vero solo se si considera l'area accessibile al pubblico in generale. In effetti, le Catacombe di Sant'Agata sono grandi il doppio delle Catacombe di San Paolo, ma molte sezioni contenenti affreschi murali sono state chiuse per evitare di danneggiarle.</p>
+        <p class="text par3SAC">Tuttavia, alcune sezioni contenenti murales leggermente incompleti/disconnessi sono ancora disponibili per il pubblico in generale.</p>
+        <img class="SaintAgathasCatacombs1" src="images/StAgathaCatacombs2.jpg" alt="Saint Pauls Catacombs">
+        <p class="text par4SAC">Tra le numerose tipologie di tombe che si possono incontrare all'interno delle Catacombe di Sant'Agata, una delle tipologie più importanti è quella della "tavola a baldacchino con dorso a sella". Tale tomba avrebbe la sua parte superiore a forma di dorso di una sella e avrebbe anche un baldacchino (un coperchio sospeso sulla tomba) che sarebbe sostenuto da quattro pilastri.</p>
+        
+        <!-- <button class="goToLocSAC" id="goToLocSAC">Go To Location</button> -->
+        <img class="SaintAgathasCatacombsMap" src="images/St_Agatha_Catacombs_Map_Cropped.png">
+        <p class="text fillSAC"></p>
+    </div>
+
+
+
+    <div class="bottombar">
+        <span id="ct"></span>
+        <span id="cd"></span>
+        <span id="temp"></span>
+    </div>
+
+      <script src="appHS.js"></script>
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleRes.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/choicePage.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topBar">
+        <div id="back" onclick="location.href='Restaurantsita.html'"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true"></i></div> <!--Back icon-->
+        <div id="home" onclick="location.href='mainPageita.html'"><i class="fa fa-home fa-5x icon" aria-hidden="true"></i></div> <!--Home icon-->
+    </div>
+
+    <div class="sideBar">
+        <button class="PadroneFishHouse" id="PadroneFishHouse">Il Padrone Fish House</button>
+        <button class="VedutaRestaurant" id="VedutaRestaurant">Veduta Restaurant</button>
+        <button class="IsSerkin" id="IsSerkin">Is-Serkin</button>
+        <button class="PointDeVue" id="PointDeVue">Point De Vue</button>
+    </div>
+
+    <!-- OVERVIEW PAGE  -->
+    <!-- <div class="mainArea" id="Overview" style="display: block;">
+        <header class="OverviewTitle">Overview</header>
+        <p class="text par1OV">Located in the west-central region of Malta, Rabat is one of the most historically important cities that can be found in Malta. </p>
+        <p class="text par2OV">First and foremost, Rabat is considered by many to be the birthplace of Christianity in Malta. The reason for this being that, many believe that Rabat was Saint Paul’s place of residence during his three month stay in Malta (where the specific place he stayed, is known as ‘Saint Paul’s Grotto, which is available for the general public to visit nowadays). Not to mention that Rabat contains a number of catacombs (including Saint Paul’s Catacombs and Saint Agatha’s Catacombs), which were built during Italy’s control over Malta.</p>
+        <p class="text par3OV">Malta was also under the control of Arabs for more than 200 years (from 870 AD to 1090 AD). This was especially evident in Rabat’s case due to the fact that Rabat underwent an expansion in land, as a result of having its neighbouring city Mdina scale down its walls. </p>
+        <img class="Overview" src="images/overview.jpg" alt="Rabat">
+        <p class="text par4OV">In today’s day and age, with over eleven thousand people living in Rabat, this city is more than just a historical tale, but has many things to do and explore! </p>
+    </div>  -->
+
+    <!-- RESTAURANT INFO PAGES  -->
+    <!-- PADRONE FISH HOUSE -->
+    <div class="mainArea" id="Padrone-Fish-House">
+        <div id="InfoPagePFH">
+            <img class="PadroneFishHouseMain" src="images/PadroneRestaraunt1.jpg" alt="Il Padrone Fish House">
+            <header>Il Padrone Fish House</header>
+            <p class="text par1PH">Il "Padrone Fish House" è un ristorante di fascia alta che si trova molto vicino alla piazza della città di Rabat.</p>
+            <p class="text par2PH">Come suggerisce il nome, questo ristorante si concentra principalmente sui frutti di mare. In effetti, le vaste categorie di pesce che offre parlano da sole, che comprende crostacei, pesce marinato e pesce alla griglia. </p>
+            <p class="text par3PH">Tuttavia, un cliente de "Il Padrone Fish House" potrebbe comunque ordinare un piatto di pasta (che incorpora tutti in qualche modo il pesce) o un taglio di manzo se lo desidera.</p>
+            <button class="showMenuPH" id="PadronMenuClick">Mostra menu</button>
+            <div class="picPFH">
+                <img class="PFHMap" src="images/Il_Padrone_Fish_House_Map_Cropped.png">
+            </div>
+        </div>
+        <div id="menuPadron" style="display: none;">
+            <button class="hideMenuPH" id="PadronMenuClickHide">Nascondi menu</button>
+            <p class="menuPFH">
+                <u>Antipasti</u><br><br>
+ 
+                Antipasti misti della casa . . . . . . . . . . . . . . . . . . . . . . . €28<br>
+                Chef’s special: selection of raw, marinated and grilled<br> local fish and shellfish<br><br>
+
+                Tartare di tonno . . . . . . . . . . . . . . . . . . . . . . . . . . . . €20<br>
+                Tuna tartare<br><br>
+
+                Polpettine di mucco . . . . . . . . . . . . . . . . . . . . . . . . . . .€14<br>
+                Fried or grilled slightly crunchy housemade whitebait<br> of your liking<br><br>
+
+                Insalata di mare . . . . . . . . . . . . . . . . . . . . . . . . . . . . €19<br>
+                Seafood salad with calamari, octopus and shrimps<br><br>
+
+                Insalata di polipo . . . . . . . . . . . . . . . . . . . . . . . . . . . €18<br>
+                Octopus salad with Greek kalamata olives<br><br>
+
+                Antipasto all’ Italiana . . . . . . . . . . . . . . . . . . . . . . . . .€16<br>
+                Selection of Italian salami, parma ham, prosciutto,<br> speck and DOP cheese<br><br>
+
+                Verdure grigliate . . . . . . . . . . . . . . . . . . . . . . . . . . . .€12<br>
+                Seasonal grilled vegetables<br><br>
+
+                Soup of the day . . . . . . . . . . . . . . . . . . . . . . . . . . . . .€9.50<br>
+
+                <br><br><u>Marinati/Marinated fish</u><br><br>
+
+                Filletti di pesce azzurro all’ aceto . . . . . . . . . . . . . . . . . . €15<br>
+                Blue fish fillets marinated in vinegar<br><br>
+
+                Gamberetti al limone . . . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Shrimps in lemon juice<br><br>
+
+                Carpaccio di salmone all’ arancia . . . . . . . . . . . . . . . . .  . . €18.50<br>
+                Salmon fish carpaccio in orange juice<br><br>
+
+                Carpaccio di tonno all’ aceto balsamico . . . . . . . . . . . . . . . . .€18.50<br>
+                Tuna fish carpaccio in balsamic vinegar<br><br>
+
+                Carpaccio di pesce spada . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Sword fish carpaccio in lemon juice<br><br>
+
+                Scampi marinati . . . . . . . . . . . . . . . . . . . . . . . . . . . .  €26<br>
+                Langoustine in lemon juice<br><br>
+
+                Gamberoni marinati . . . . . . . . . . . . . . . . . . . . . . . . . . . €26<br>
+                Giant prawns in lemon juice<br><br>
+
+                <br><br><u>Frutti di mare/Shell fish</u><br><br>
+
+                Zuppa frutti di mare . . . . . . . . . . . . . . . . . . . . . . . . €21.90<br>
+                Mussels, clams and squid with tomato sauce<br><br>
+
+                Vongole veraci in guazzetto . . . . . . . . . . . . . . . . . . . . . . . . €19.90<br>
+                Clams in tomato sauce<br><br>
+
+                Soute’ di vongole veraci . . . . . . . . . . . . . . . . . . . . . . . . €19.90<br>
+                Clams in white wine<br><br>
+
+                Zuppa di cozze . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Braised mussless with fresh herbs and tomato sauce<br><br>
+
+                Soute’ di cozze . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Mussels in white wine<br><br>
+
+                <br><br><u>Primi Piatti/Starters </u><br><br>
+
+                Zuppa di pesce del Mediterraneo . . . . . . . . . . . . . . . . . . . . . . . . €13.50<br>
+                Fish soup with Mediterranean fish and seafood. Vegetables included<br><br>
+
+                Linguine ai ricci di mare . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Linguine with sea urchins<br><br>
+
+                Spaghetti vongole . . . . . . . . . . . . . . . . . . . . . . . . €18<br>
+                Spaghetti with clams brine<br><br>
+
+                Spaghetti frutti di mare . . . . . . . . . . . . . . . . . . . . . . . . €20<br>
+                Spaghetti with mussels, shrimps and clams<br><br>
+
+                Spaghetti gamberetti . . . . . . . . . . . . . . . . . . . . . . . . €18<br>
+                Spaghetti with shrimps<br><br>
+
+                Spaghetti pesce spada . . . . . . . . . . . . . . . . . . . . . . . . €16<br>
+                Spaghetti with sword fish<br><br>
+
+                Paccheri astice . . . . . . . . . . . . . . . . . . . . . . . . €25<br>
+                Paccheri with lobster<br><br>
+
+                Spaghetti tonno . . . . . . . . . . . . . . . . . . . . . . . . €16<br>
+                Spaghetti with tuna<br><br>
+
+                Spaghetti scampi . . . . . . . . . . . . . . . . . . . . . . . . €20<br>
+                Spaghetti with langoustine<br><br>
+
+                Tagliatelle ai funghi porcini . . . . . . . . . . . . . . . . . . . . . . . . €16<br>
+                Tagliatelle with mushrooms, wine and parlsey<br><br>
+
+                Risotto Marinara . . . . . . . . . . . . . . . . . . . . . . . . €20<br>
+                Seafood risotto with squid, shrimps and mussels,<br> and tomatoes<br><br>
+
+                Ravioli nero di sepia . . . . . . . . . . . . . . . . . . . . . . . . €16<br>
+                Ravioli with black squid ink<br><br>
+
+                Ravioli salmone e’ ricotta . . . . . . . . . . . . . . . . . . . . . . . . €16.50<br>
+                Ravioli with salmon and ricotta<br><br>
+
+                Specialità Del Giorno . . . . . . . . . . . . . . . €20<br><br>
+
+                <br><br><u>Secondi di pesce/Fish main courses</u><br><br>
+
+                Grigliata mista di pesce . . . . . . . . . . . . . . . . . . . . . . . . €28.50<br>
+                Mixed grilled sword fish, tuna, squid, langoustine and prawns<br><br>
+
+                Gamberoni alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €32<br>
+                Grilled giant prawns<br><br>
+
+                Pesce spada alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €24.50<br>
+                Grilled sword fish<br><br>
+
+                Scampi alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €32<br>
+                Grilled langoustine<br><br>
+
+                Calamari alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €23.50<br>
+                Grilled squid<br><br>
+
+                Calamari fritti . . . . . . . . . . . . . . . . . . . . . . . . €22.50<br>
+                Fried squid<br><br>
+
+                Tataki di Tonno . . . . . . . . . . . . . . . . . . . . . . . . €26.50<br>
+                Seared tuna with pistachio and vegetables<br><br>
+
+                Fritto misto . . . . . . . . . . . . . . . . . . . . . . . . €24.50<br>
+                Deep fried squid and shrimps<br><br>
+
+                Zuppa speciale della casa . . . . . . . . . . . . . . . . . . . . . . . . €29.50<br>
+                Tuna, sword fish, calamari, mussels, clams, octopus, king prawn,<br> cooked with cherry tomatoes<br><br>
+
+                Fritto di gamberi . . . . . . . . . . . . . . . . . . . . . . . . €24<br>
+                Fried shrimps<br><br>
+
+                Pesce fresco del mediterraneo . . . . . . . . . . . . . . . . . . . . . . . . €60<br>
+                Mediterranean fresh fish (€60 per KG)<br><br>
+
+                Arragosta . . . . . . . . . . . . . . . . . . . . . . . . €90<br>
+                Crawfish (€90 per KG)<br><br>
+
+                Astice . . . . . . . . . . . . . . . . . . . . . . . . €90<br>
+                Lobster (€90 per KG)<br><br>
+
+
+
+
+
+
+
+
+
+
+                <br><br><u>Secondi di carne/Meat main courses</u><br><br>
+
+                Tagliatta di manzo . . . . . . . . . . . . . . . . . . . . . . . . €28<br>
+                Seared sliced fillet of beef (300 gr)<br><br>
+
+                Filleto di manzo alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €28<br>
+                Grilled fillet of beef (300 gr)<br><br>
+
+                Costata di manzo alla griglia . . . . . . . . . . . . . . . . . . . . . . . . €29<br>
+                Grilled rib eye (300 gr)<br><br>
+
+                Mushroom sauce . . . . . . . . . . . . . . . . . . . . . . . . €3.50<br><br>
+
+                Pepper sauce . . . . . . . . . . . . . . . . . . . . . . . . €3.50<br><br>
+
+
+                <br><br><u>Contorni/Side dishes</u><br><br>
+
+                Verdure grigliate . . . . . . . . . . . . . . . . . . . . . . . . €9<br>
+                Seasonal grilled vegetables<br><br>
+
+                Patatine fritte . . . . . . . . . . . . . . . . . . . . . . . . €4<br>
+                French fries<br><br>
+
+                Insalata verde . . . . . . . . . . . . . . . . . . . . . . . . €6<br>
+                Seasonal green salad<br><br>
+
+                Insalata d’arancia . . . . . . . . . . . . . . . . . . . . . . . . €4<br>
+                Sicilian orange salad<br><br>
+
+
+                <br><br><u>Dolci/Sweets</u><br><br>
+
+                Cassata siciliana . . . . . . . . . . . . . . . . . . . . . . . . €6.50<br>
+                Traditional Sicilian dessert made of almond pastry<br> filled with sweet ricotta cheese<br><br>
+
+                Creme brulee . . . . . . . . . . . . . . . . . . . . . . . . €6.50<br>
+                Custard base topped with a layer of hardened<br> caramelized sugar<br><br>
+
+                Tiramisu’ . . . . . . . . . . . . . . . . . . . . . . . . . . . €6.50<br>
+                Espresso-soaked biscuits topped with mascarpone<br><br>
+
+                Panna cotta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  €6.50<br>
+                Fresh cream thickened with gelatine, molded and served<br> with a selection of topping: caramel sauce, pistachio, chocolate.<br><br>
+
+                I Gelati Italiani (per scoop) . . . . . . . . . . . . . . . . . . . . . . . . €2.50<br>
+                Selection of Italian ice cream<br> (Vanilla, chocolate, strawberry and pistachio)<br><br>
+
+                I Sorbetti Italiani (per scoop) . . . . . . . . . . . . . . . . . . . . . . . . €3.50<br>
+                Selection of Italian sorbets (Lemon, strawberry and pistachio)<br><br>
+
+                Triologia Il Padrone . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Special sweets trilogie from our chef<br><br>
+
+                Frutta di stagione . . . . . . . . . . . . . . . . . . . . . . . . €6.50<br>
+                Fresh seasonal fruits<br><br>
+
+                Banoffee cake . . . . . . . . . . . . . . . . . . . . . . . . . . €6.50<br>
+                A traditional English dessert made from bananas,<br> topped with a homemade frosting, then drizzled<br> with a delicious chocolate sauce<br><br>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+            </p>
+        </div>
+    </div>
+
+    <!-- VEDUTA RESUTANRANT  -->
+    <div class="mainArea" id="Veduta" style="display: none;">
+        <div id="InfoPageVR">
+            <img class="Veduta" src="images/Veduta1.jpg" alt="Veduta Restaurant">
+            <header class="VedutaHeader">Veduta Restaurant</header>
+            <p class="text par1VR">Il ristorante "Il-Veduta" offre un'esperienza culinaria raffinata, con una vista panoramica come nessun altro. In maltese, 'Il-Veduta' si traduce direttamente in 'la vista', mostrando il significato della campagna che può essere vista dal ristorante.</p>
+            <p class="text par2VR">Oltre allo scenario, questo ristorante è orgoglioso della grande quantità e qualità assoluta delle sue pizze e pasta. Tuttavia, "il-Veduta" offre altre selezioni di cibo come insalate, manzo, pollo, pesce e frittate. Per non parlare del fatto che diverse voci di menu sono etichettate come vegane o senza glutine.</p>
+            <button class="showMenuVR" id="VedutaMenuClick">Mostra menu</button>
+            <div class="picVR">
+                <img class="VRMap" src="images/Il-Veduta_Map_Cropped.png">
+            </div>
+        </div>
+        <div id="menuVeduta">
+            <button class="hideMenuVR" id="VedutaMenuClickHide">Nascondi menu</button>
+            <p class="menuVR">
+                <u>STARTERS</u><br><br>
+
+                Fresh soup of the day . . . . . . . . . . . . . . . . . . . . . . . . . . . 7.50<br><br>
+                Spicy chicken wings . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8.75<br>
+                Served with BBQ sauce<br><br>
+                
+                Stone baked focaccia . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7.50<br>
+                Pizza base with olive oil, garlic and rosemary<br><br>
+                
+                Garlic bread (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5.50<br>
+                Served with diced tomatoes<br><br>
+                
+                
+                Garlic bread with mozzarella (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6.50<br>
+                Served with melted mozzarella and diced tomatoes<br><br>
+                
+                
+                Sauteed fresh local mushrooms . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7.50<br>
+                Served in garlic butter<br><br>
+                
+                
+                Bruschetta (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6.50<br>
+                Sliced baguette loaf and lightly toasted, with a mix of onions,<br> tomatoes, garlic Parmesan shavings, basil, a dash of extra<br> virgin olive oil and balsamic vinegar<br><br>
+                
+
+                <br><br><u>SALADS</u><br><br>
+
+                Caprese salad (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.50<br>
+                Contains sliced tomatoes, mozzarella di bufala, fresh basil leaves,<br> olive old and balsamic<br><br>
+                
+                Smoked salmon salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15.00<br>
+                Contains Smoked salmon, lettuce, cherry tomatoes, onions,<br> cucumber, black olives, peppers, coriander and citrus olive oil<br><br>
+                
+                Tuna nicoise salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.00<br>
+                Contains tuna chunks, lettuce, cherry tomatoes, onions,<br> black olives, anchovies, egg, boiled potato, french beans and olive oil<br><br>
+                
+                Chicken caesar salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15.00<br>
+                Contains strips of grilled chicken, lettuce, cherry tomatoes,<br> garlic croutons, crispy bacon, Parmesan shavings and Caesar dressing<br><br>
+                
+                Greek Salad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br>
+                Contains tomatoes, cucumbers, onions, mixed peppers,<br> olives and feta cheese	<br><br>
+                
+                <br><br><u>PIZZA</u><br><br>
+
+                Margherita (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8.95<br>
+                Tomato sauce, mozzarella and oregano<br><br>
+                
+                Calzone (Closed Pizza) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.00<br>
+                Tomato sauce, mozzarella, ham, mushrooms and oregano<br><br>
+                
+                Funghi (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.00<br>
+                Tomato sauce, mozzarella, mushrooms and oregano<br><br>
+                
+                Maltese . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.25<br>
+                Tomato sauce, mozzarella, Maltese sausage (pork), egg,<br> Maltese peppered cheeselet (ġbejna tal-bżar) and oregano<br><br>
+                
+                Capricciosa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br>
+                Tomato sauce, mozzarella, mushrooms, ham, egg and oregano<br><br>
+                
+                Quattro formaggi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.50<br>
+                Tomato sauce, mozzarella, blue cheese, Edam, Maltese peppered<br> cheeselet (ġbejna tal-bżar) and oregano<br><br>
+                
+                Quattro stagioni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.50<br>
+                Tomato sauce, mozzarella, mushrooms, peas, egg, salami,<br> olives and oregano<br><br>
+                
+                Al tonno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.50<br>
+                Tomato sauce, mozzarella, tuna, anchovies, onions and oregano<br><br>
+                
+                Il-Veduta (House Pizza) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.25<br>
+                Tomato sauce, mozzarella, bacon, sausage, peas, egg,<br> mushrooms, olives and oregano<br><br>
+                
+                Pollo e piu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.25<br>
+                Tomato sauce, mozzarella, chicken, pepperoni,<br> mixed sweet peppers and oregano<br><br>
+                
+                Al salmone affumicato . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br>
+                Tomato sauce, mozzarella, onions, capers, smoked salmon and oregano<br><br>
+                
+                Pepperoni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11.50<br>
+                Tomato sauce, mozzarella, pepperoni and oregano<br><br>
+                
+                Tuna-Spinach Calzone (Closed Pizza) . . . . . . . . . . . . . . . . . 12.00<br>
+                Tomato sauce, mozzarella, tuna, anchovies, spinach,<br> onions, olives and oregano<br><br>
+                
+                Caponata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br>
+                Tomato sauce, mozzarella, tuna, caponata and oregano<br><br>
+                
+                
+                <br><br><u>PASTA AND RICE</u><br><br>
+
+                Lasagne . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br>
+                Layers of fresh pasta, beef and pork mince, tomato sauce,<br> bechamel sauce and grated Parmesan<br><br>
+                
+                Cannelloni . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br>
+                Fresh pasta tubes stuffed with minced local pork, spinach leaves,<br> tomato sauce, bechamel sauce and grated Parmesan<br><br>
+                
+                Maltese Rikotta Ravioli (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.50<br>
+                Local rikotta cheese ravioli, light garlic and fresh basil tomato sauce<br><br>
+                
+                Bolognese . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br>
+                Beef and pork mince in tomato sauce<br><br>
+                
+                Al Pesto (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br>
+                Olive oil blended with basil, garlic, Parmesan and pine nuts<br><br>
+                
+                Carbonara . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br><br>
+                
+                All' Amatriciana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.00<br><br>
+                
+                Maltese . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.00<br><br>
+                
+                Blu e Verde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.50<br><br>
+                
+                Misto Di Mare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14.50<br><br>
+                
+                Con Pollo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.00<br><br>
+                
+                Al Farouk . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br>
+                Cocktail prawns, spinach, light curry cream sauce<br><br>
+                
+                Al Salmone . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br><br>
+                
+                Chicken curried rice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.75<br>
+                Chicken, pineapple, green apple, curry powder, English mustard,<br> herbs and spices, mango chutney, golden raisins, yoghurt<br> and coconut milk<br><br>
+                
+                Vegetable rice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.50<br>
+                Fresh local mushrooms, sweet peppers, onions, soya sauce,<br> ginger flavoured vegetable stock<br><br>
+
+
+                <br><br><u>OMELETTES</u><br><br>
+
+                Plain omelette (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10.75<br><br>
+                
+                Fresh local mushroom omelette (V) . . . . . . . . . . . . . . . . . . . . . . . . 13.00<br><br>
+                
+                Chicken omelette . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.75<br><br>
+                
+                Smoke salmon omelette . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.75<br><br>
+                
+                Ham omelette . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.25<br><br>
+                
+                Cheese omelette . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12.25<br><br>
+                
+                Farmers' omelette (V) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.50<br><br>
+                
+
+                <br><br><u>CHICKEN</u><br><br>
+
+                Sauteed breast of chicken duxelle . . . . . . . . . . . . . . . . . . . . . . . . 21.50<br>
+                Stuffed with mushrooms, ham, onions and creamy cheese sauce<br><br>
+                
+                Grilled chicken breast . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17.00<br><br>
+                
+                Crunchy chicken burger . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13.00<br>
+                Crispy crunchy chicken pattie in a bun<br><br>
+                
+                Roast chicken . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17.00<br>
+                Half chicken, grilled bacon<br><br>
+                
+                Spicy breaded chicken fillets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17.00<br>
+                Served with a BBQ dip<br><br>
+                
+
+                <br><br><u>GRILLS</u><br><br>
+                
+                Fresh fillet of beef . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28.00<br><br>
+                
+                Fresh ribeye of beef . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25.50<br><br>
+                
+                Fresh milk fed veal chop . . . . . . . . . . . . . . . . . . . . . . . . . . . 26.50<br><br>
+                
+                Pork loin rack of ribs . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17.50<br>
+                Served with coleslaw<br><br>
+                
+                Il-Veduta black angus beef burger . . . . . . . . . . . . . . . . . . . . . . 4.00<br>
+                Angus pattie, grilled bacon, cheddar cheese, onion marmalade<br> and tomatoes<br><br>
+                
+                Mdina black angus beef burger . . . . . . . . . . . . . . . . . . . . . . . . 15.00<br>
+                Angus pattie, grilled sausages and bacon, fried egg and tomatoes<br><br>
+                
+                Black angus beef burger . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.00<br>
+                Angus pattie, onion marmalade and tomatoes<br><br>
+                
+
+                <br><br><u>FISH</u><br><br>
+
+                Deep fried breaded fillet of cod (2pcs) . . . . . . . . . . . . . . . . 16.00<br>
+                Served with lemon wedge<br><br>
+                
+                Deep fried breaded scampi . . . . . . . . . . . . . . . . . . . . . . 15.75<br>
+                Served with tartar sauce and lemon wedge<br><br>
+                
+                Pan fried octopus . . . . . . . . . . . . . . . . . . . . . . 22.50<br>
+                Served with mint and garlic butter<br><br>
+                
+                Pan roasted scottish salmon . . . . . . . . . . . . . . . . . . . . . . 22.50<br><br>
+                
+                Grilled swordfish . . . . . . . . . . . . . . . . . . . . . . 22.50<br>
+                Served with olive, onion and basil salsa<br><br>
+                
+                Pan Roasted Seabass (Spnott) . . . . . . . . . . . . . . . . . . . . . . 20.50<br><br>
+                
+
+
+                <br><br><u>SIDE ORDERS</u><br><br>
+
+                Chips . . . . . . . . . . . . . . . . . . . . . . 2.75<br><br>
+                
+                Spicy potato wedges . . . . . . . . . . . . . . . . . . . . . . 3.75<br><br>
+                
+                Mixed vegetables . . . . . . . . . . . . . . . . . . . . . . 3.75<br><br>
+                
+                Mixed vegetables . . . . . . . . . . . . . . . . . . . . . . 3.75<br>
+                Side salad<br><br>
+                
+
+
+                <br><br><u>KIDDIE'S MENU</u><br><br>
+
+                Grilled sausages and chips . . . . . . . . . . . . . . . . . . . . . . 8.00<br><br>
+                
+                Fish fingers and chips . . . . . . . . . . . . . . . . . . . . . . 8.00<br><br>
+                
+                Beef burger and chips . . . . . . . . . . . . . . . . . . . . . . 9.75<br><br>
+                
+                Small pizza margherita with cocktail sausages . . . . . . . . . . . . 7.75<br><br>
+                
+                chicken nuggets (6pcs) and chips . . . . . . . . . . . . . . . . . . . . . . 8.00<br><br>
+                
+                Crispy crunchy chicken burger and chips . . . . . . . . . . . . . . . 9.75<br><br>
+                
+                Pasta with light tomato sauce . . . . . . . . . . . . . . . . . . . . . . 7.75<br><br>
+                
+
+
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+            </p>
+        </div>
+    </div> 
+    
+    <!-- SERKIN -->
+    <div class="mainArea" id="Serkin" style="display: none;">
+        <div id="InfoPageSR">
+            <img class="Serkin" src="images/Serkin1.jpg" alt="Saint Pauls Catacombs">
+            <header class="SerkinHeader">Is-Serkin</header>
+            <p class="text par1SR">Situato nel cuore di Rabat, il ristorante "Is-Serkin" offre una visione eccezionale della cultura gastronomica maltese, a prezzi estremamente convenienti.</p>
+            <p class="text par2SR">Innanzitutto, si ha la possibilità di provare i famosi "pastizzi" di questo ristorante. I "Pastizzi" sono di gran lunga l'alimento più famoso quando si tratta di cibo maltese, che sono fondamentalmente pasticcini fatti di pasta sfoglia, con un ripieno di ricotta o piselli. Per non parlare del fatto che questo particolare ristorante offre il ripieno aggiuntivo di "pastizzi" di pollo. </p>
+            <p class="text par3SR">In secondo luogo, "Is-Serkin" offre un altro alimento maltese chiamato "qassatat", che è meglio descritto come varianti più elaborate di "pastizzi" che sono fatte con un impasto più denso, con un ripieno di ricotta o piselli. Ancora una volta, questo ristorante offre un altro ripieno per il "qassatat" che è quello delle acciughe.</p>
+            <p class="text par4SR">In terzo luogo, se non si è dell'umore giusto per i pasticcini, c'è la possibilità di ordinare "ftajjar" che sono panini maltesi.</p>
+            <button class="showMenuSR" id="SerkinMenuClick">Mostra menu</button>
+            <div class="picSR">
+                <img class="SRMap" src="images/Is-Serkin_Map_Cropped.png">
+            </div>
+        </div>
+        <div id="menuSerkin">
+            <button class="hideMenuSR" id="SerkinMenuClickHide">Nascondi menu</button>
+            <p class="menuSR">
+                <u>Pastries</u><br><br>
+
+                Pastizzi Irkotta . . . . . . . . . . . . . . . . . . . . . . . . €0.40<br>
+                Cheesecakes<br><br>
+                
+                Pastizzi Pizelli . . . . . . . . . . . . . . . . . . . . . . . . €0.40<br>
+                Peacake<br><br>
+                
+                Pastizzi Bit-Tigieg . . . . . . . . . . . . . . . . . . . . . . . . €0.50<br>
+                Pastizzi with chicken<br><br>
+                
+                Qassatat Incova . . . . . . . . . . . . . . . . . . . . . . . . €0.50<br><br>
+                Qassatat Irkotta . . . . . . . . . . . . . . . . . . . . . . . . €1.00<br><br>
+                Qassatat Pizelli . . . . . . . . . . . . . . . . . . . . . . . . €1.00<br><br>
+                
+                <br><br><u>Ftajjar</u><br><br>
+                
+                Ftira biz-Zejt . . . . . . . . . . . . . . . . . . . . . . . . €2.00<br>
+                Traditional Maltese ring-shaped bread with tuna<br><br>
+                
+                Ftira bil-Perzut u l-Gobon . . . . . . . . . . . . . . . . . . . . . . . . €2.00<br>
+                Traditional Maltese ring-shaped bread with ham and cheese<br><br>
+
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                </p>
+        </div>
+    </div>  
+    <!-- POINT DE VUE -->
+    <div class="mainArea" id="Point-De-Vue" style="display: none;">
+        <div id="InfoPagePDV">
+            <img class="PointDeVeu" src="images/PointDeVeu1.jpg" alt="Point De Veu">
+            <header class="PointDeVeuHeader">Point De Veu</header>
+            <p class="text par1PDV">Prende il nome dalla vista mozzafiato che presenta, il ristorante "Point De Vue" è uno che offre sostentamento appetibile a un prezzo moderato.</p>
+            <p class="text par2PDV">"Point De Vue" offre un'ampia varietà di piatti di carne, che include una vasta gamma di hamburger, maiale, manzo, pollo, pesce e coniglio. Il menù di questo ristorante, infatti, è composto da 4 pagine dedicate esclusivamente alla carne. Se la carne non è di tuo gradimento, 'Point De Vue' ha anche una raffinata selezione di pizze, pasta e insalate tra cui scegliere.</p>
+            <button class="showMenuPDV" id="PointDeVeuMenuClick">Mostra menu</button>
+            <div class="picPDV">
+                <img class="PDVMap" src="images/Point_De_Vue_Map_Cropped.png">
+            </div>
+        </div>
+        <div id="menuPoint">
+            <button class="hideMenuPDV" id="PointMenuClickHide">Nascondi menu</button>
+            <p class="menuPDV">
+                <u>Starters</u><br><br>
+
+                Bruschetta . . . . . . . . . . . . . . . . . . . . . . . . €3.95<br>
+                4 pieces toasted bread with garlic, onions, fresh tomatoes and basil<br><br>
+                
+                Garlic Bread . . . . . . . . . . . . . . . . . . . . . . . . €2.25<br>
+                Toasted garlic bread with parsley optional with mozzarella<br><br>
+                
+                Tanzania Mushrooms . . . . . . . . . . . . . . . . . . . . . . . . €3.50<br>
+                Fried mushrooms in garlic flamed in Brandy with melted blue cheese<br><br>
+                
+                Chicken Wings . . . . . . . . . . . . . . . . . . . . . . . . €6.95<br>
+                Marinated with BBQ sauce with an additional sweet chili<br><br>
+                
+                Fresh Calamari and octopus . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Fried in garlic, chilli and herbs<br><br>
+                
+                Calamari . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Fried battered calamari rings served with tartar sauce<br><br>
+                
+                Mussels in Garlic . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Mussels cooked in olive oil, garlic, white and confit tomatoes<br><br>
+                
+                Beef Carpaccio . . . . . . . . . . . . . . . . . . . . . . . . €9.75<br>
+                Base of rucola sliced fillet of beef with a mixture of<br> balsamic vinegar and olive oil finished with Parmesan cheese<br><br>
+                
+                Soup of the Day . . . . . . . . . . . . . . . . . . . . . . . . €6.95<br>
+                Fresh soup of the Day served with croutons<br><br>
+                Chef’s Focaccia . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Garlic, mild chili, Parmesan shavings, Parma Ham,<br> rucola and cherry tomatoes<br><br>
+                
+                Mixed Platter Combo . . . . . . . . . . . . . . . . . . . . . . . . €12.00<br>
+                Chicken wings, mozzarella sticks, onion rings and wontons<br> served with sweet chili sauce, garlic bread<br><br>
+                
+                Taste of Malta . . . . . . . . . . . . . . . . . . . . . . . . €12.50<br>
+                Bigilla, sundried tomatoes, goat cheese, stuffed olives,<br> Maltese sausage, pickled onions, tomato paste and Maltese galletti<br><br>
+                
+                Cheese Platter . . . . . . . . . . . . . . . . . . . . . . . . €13.90<br>
+                A selection of 4 types of cheeses, dip, nuts, grapes and grissini<br><br>
+                
+                Italian Platter . . . . . . . . . . . . . . . . . . . . . . . . €13.90<br>
+                A selection of cold cuts served with onions, Parmesan<br> cheese, grapes, nuts and grissini<br><br>
+
+
+                <br><br><u>Salads</u><br><br>
+
+                Chicken Caesar Salad . . . . . . . . . . . . . . . . . . . . . . . . €11.90<br>
+                Lettuce, croutons, Parmesan, bacon, chicken, cherry tomatoes<br> tossed with our own caesar dressing<br><br>
+
+                Italian Salad . . . . . . . . . . . . . . . . . . . . . . . . €11.90<br>
+                Rucola base, Parma ham, bufola, cherry tomatoes, olives and basil oil<br><br>
+
+                Salmon and Prawn Salad . . . . . . . . . . . . . . . . . . . . . . . . €11.90<br>
+                Mixed lettuce, cucumber, cherry tomatoes, smoked salmon,<br> baby prawns and tartar dressing<br><br>
+
+                Seafood Salad . . . . . . . . . . . . . . . . . . . . . . . . €11.90<br>
+                Mixed lettuce, tomatoes, onions, olives, cucumbers and<br> mixed seafood and shell mussels<br><br>
+
+                Tuna and Feta Cheese Salad . . . . . . . . . . . . . . . . . . . . . . . . €10.95<br>
+                Mixed lettuce, tomatoes, onions, cucumbers, olives, tuna, feta and basil dressing<br><br>
+
+                Vegetarian Salad . . . . . . . . . . . . . . . . . . . . . . . . €10.95<br>
+                Marinated roasted vegetables served with nuts<br><br>
+
+
+
+                <br><br><u>Pasta and Risotto</u><br><br>
+
+
+                Ravioli Ricotta . . . . . . . . . . . . . . . . . . . . . . . . €10.95<br>
+                Cheese ravioli, tossed with herbs, parmesan and tomato sauce<br><br>
+
+                Tortellini Pink Lady . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Cooked with sauteed mushrooms, bacon, cream and a dash of tomato sauce<br><br>
+
+                Al Diavolo . . . . . . . . . . . . . . . . . . . . . . . . €10.95<br>
+                Cooked with onions, garlic, bacon bits, chilli sauce pepperoncino<br><br>
+
+                Marinara . . . . . . . . . . . . . . . . . . . . . . . . €12.75<br>
+                Cooked with onions, fresh garlic, octopus, mussels,<br> shrimps, calamari rings, king prawn, white wine, black olives<br><br>
+
+                Salmon and cream . . . . . . . . . . . . . . . . . . . . . . . . €11.95<br>
+                Smoked salmon flamed with vodka, onions, tomato sauce, cream and caviar<br><br>
+
+                Chicken and broccoli . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Cooked with chicken cubes, tomatoes, onions, garlic, broccoli, cream and mustard<br><br>
+
+                Maltese Pasta . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Cooked with maltese sausage, goat cheese, sundried tomatoes,<br> onions, olives and a dash of tomato sauce<br><br>
+
+                Cheesy Lovers Pasta . . . . . . . . . . . . . . . . . . . . . . . . €12.75<br>
+                Cooked with onion, blue cheese, parmesan, walnuts, french mustard and cream<br><br>
+
+                Vegetarian Pasta . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Cooked with onion, garlic and seasonal vegetables<br><br>
+                Risotto Al Mare . . . . . . . . . . . . . . . . . . . . . . . . €12.95<br>
+                Cooked with onions, fresh garlic, octopus, mussels, shrimps,<br> king prawn, calamari rings, white wine, black olives served with tomato sauce<br><br>
+
+                Beef Risotto . . . . . . . . . . . . . . . . . . . . . . . . €12.95<br>
+                Fillet of beef with onion, mushrooms, bell peppers and cream<br><br>
+
+                Chicken Curry Risotto . . . . . . . . . . . . . . . . . . . . . . . . €12.95<br>
+                Strips of sautéed fresh chicken, onion, curry, sultanas, coconut cream,<br> pineapple, nuts, parsley and cream<br><br>
+
+                Funghi Risotto . . . . . . . . . . . . . . . . . . . . . . . . €12.00<br>
+                Cooked with onion, mushroom flamed with brandy, parmesan and cream<br><br>
+
+
+                <br><br><u>Burgers</u><br><br>
+
+
+                Traditional Burger . . . . . . . . . . . . . . . . . . . . . . . . €9.95<br>
+                Chicken breast or beef burger served with salad and fries<br><br>
+
+                Maltese Burger . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Beef burger with sundried tomatoes, peppered cheese and<br> Maltese sausages served with salad and fries<br><br>
+
+                Caesar Burger . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Chicken breast burger with bacon, Parmesan cheese served<br> with Caesar dressing, salad and fries<br><br>
+
+                Gorgonzola and Mushroom Burger . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                Beef burger or chicken breast with gorgonzola, mushrooms and onions,<br> served with salad and fries<br><br>
+
+                Mango Chutney Burger . . . . . . . . . . . . . . . . . . . . . . . . €11.25<br>
+                A choice of beef burger or chicken breast with mango chutney, onions,<br> cheese, chili served with salad and fries<br><br>
+
+                Special Burger . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . €13.50<br>
+                Open bun double burger, choose from beef or chicken breast topped with<br> onion, bacon, cheese, fried egg served with onion rings, salad and fries<br><br>
+
+
+
+                <br><br><u>Meat</u><br><br>
+
+
+                Black Angus Rib-Eye Steak . . . . . . . . . . . . . . . . . . . . . . . . €21.95<br>
+                Char grilled 300 grams grilled to your liking<br><br>
+
+                Grilled Fillet of Prime Beef . . . . . . . . . . . . . . . . . . . . . . . . €23.00<br>
+                Fillet of prime beef 300 grams grilled to your liking<br><br>
+
+                Sicilian Pork Fillet . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Pork fillet in Sicilian pastry filled with mozzarella, pepperoni,<br> bacon and mustard sauce<br><br>
+
+                Char Grilled Ribs . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Half Rack €14.50 ~ Full Rack €18.50 tender meaty pork ribs basted<br> in our barbeque, Jack Daniels or honey sauce<br><br>
+
+                T-Bone Steak . . . . . . . . . . . . . . . . . . . . . . . . €21.95<br>
+                T-bone steak 500 grams grilled to your liking<br><br>
+
+                Mixed Kebabs . . . . . . . . . . . . . . . . . . . . . . . . €16.95<br>
+                1 beef kebab, 1 chicken kebab served on aromatic rice<br><br>
+
+                Mixed Grill . . . . . . . . . . . . . . . . . . . . . . . . €19.00<br>
+                Char grilled beef, pork chop, bacon, pork sausages,<br> grilled tomatoes and eggs<br><br>
+
+                Smoking Choking Combo . . . . . . . . . . . . . . . . . . . . . . . . €21.75<br>
+                Char grilled ribs, beef, barbeque chicken wings and onion rings<br><br>
+
+                Pork Chops, Salad and Chips . . . . . . . . . . . . . . . . . . . . . . . . €15.00<br><br>
+
+                Chicken Breast . . . . . . . . . . . . . . . . . . . . . . . . €14.95<br>
+                Char grilled juicy fresh chicken breast<br><br>
+
+                Chicken Supreme . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Char grilled chicken breast with bacon,<br> mushroom and melted mozzarella cream<br><br>
+
+                Point de vue Special Chicken . . . . . . . . . . . . . . . . . . . . . . . . €18.50<br>
+                Chicken parcels filled with rucola, duck, apricots served with<br> limoncello sauce<br><br>
+
+                Rabbit in White Wine . . . . . . . . . . . . . . . . . . . . . . . . €14.95<br>
+                Pan fried rabbit with garlic, rabbit seasoning and white wine<br><br>
+
+                Bragioli . . . . . . . . . . . . . . . . . . . . . . . . €14.95<br>
+                Escalope of beef filled with a mixture of boiled eggs,<br> parsley and ham, pan fried in carrots peas and tomatoes<br><br>
+
+
+                <br><br><u>Fish</u><br><br>
+
+                Salmon Steak . . . . . . . . . . . . . . . . . . . . . . . . €17.95<br>
+                Pan fried salmon served with fish sauce<br><br>
+
+                Sword Fish . . . . . . . . . . . . . . . . . . . . . . . . €17.95<br>
+                Pan fried swordfish with capers, olives, basil, garlic and tomato sauce<br><br>
+
+                King Prawns . . . . . . . . . . . . . . . . . . . . . . . . €19.50<br>
+                Cooked in garlic, brandy, basil served on a bed of rice<br><br>
+
+                Fish and Chips . . . . . . . . . . . . . . . . . . . . . . . . €12.50<br>
+                English style battered cod served with lemon and tartar sauce<br><br>
+
+                Octopus and Calamari . . . . . . . . . . . . . . . . . . . . . . . . €19.50<br>
+                Cooked with onions, garlic, olives, white wine, chili and confit tomatoes<br><br>
+
+                Fresh Fish of the Day . . . . . . . . . . . . . . . . . . . . . . . . Market Value<br><br>
+
+
+                <br><br><u>Pizza</u><br><br>
+
+
+                Margerita . . . . . . . . . . . . . . . . . . . . . . . . €7.50<br>
+                Tomato sauce, mozzarella and origano<br><br>
+
+                Funghi . . . . . . . . . . . . . . . . . . . . . . . . €8.50<br>
+                Tomato sauce, mozzarella and mushrooms<br><br>
+
+                CapricIosa . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, ham, mushrooms,<br> artichoke heart, eggs and olives<br><br>
+
+                Quattro Stagioni Mix . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, mushrooms, salami, eggs and peas<br><br>
+
+                Four Cheese . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, blue cheese,<br> maltese cheese, parmesan<br><br>
+
+                Maltija . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, capunata, maltese sausage,<br> onions, goat cheese and olives<br><br>
+
+                Marinara . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mixed seafood, olives and basil oil<br><br>
+
+                BBQ Chicken . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Barbeque sauce, mozzarella, chicken, bell peppers,<br> onions and bacon<br><br>
+
+                Meat Lovers . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, pepperoni, minced<br> beef, maltese sausage and ham<br><br>
+
+                Mdina Pizza . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, anchovies, onions, capers,<br> olives and basil oil<br><br>
+
+                Prosiutto . . . . . . . . . . . . . . . . . . . . . . . . €11.50<br>
+                Fresh tomatoes, onions, garlic, rucola, parma<br> ham, bufola, olives and basil oil<br><br>
+
+                Al Salmone . . . . . . . . . . . . . . . . . . . . . . . . €11.50<br>
+                Fresh tomatoes, onions, garlic, rucola, smoked salmon,<br> shrimps, olives and basil oil<br><br>
+
+                Calzone (closed pizza) . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, ham and mushrooms<br><br>
+
+                Diavola . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, pepperoni and chili<br><br>
+
+                Hawain . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, ham, pineapple,<br> sweet corn and bell peppers<br><br>
+
+                Vegetarian . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, mushrooms, bell peppers, peas,<br> onions, artichokes, fresh basil and sweet corn<br><br>
+<br>
+                Tuna . . . . . . . . . . . . . . . . . . . . . . . . €9.50<br>
+                Tomato sauce, mozzarella, tuna, onions, olives, capers<br><br>
+
+                Point De vue Pizza Pie (can be shared) . . . . . . . . . . . . . . . . . . . . €14.95<br>
+                Tomato sauce, mozzarella, mushrooms, parma ham, blue cheese, walnuts, sesame seeds, glazed with honey<br><br>
+
+
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                </p>
+        </div>
+    </div>
+
+    <div class="bottombar">
+        <span id="ct"></span>
+        <span id="cd"></span>
+        <span id="temp"></span>
+    </div>
+
+      <script src="appRes.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.selectionHeader {
+    position: absolute;
+    width: 439px;
+    height: 55px;
+    left: 35%;
+    top: 2%;
+
+    font-family: Ribeye;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+
+
+    color: #15223B;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+.buttons {
+    /* font-size: 180%; */
+    /* font-weight: bold; */
+    position: center;
+    left: 15%;
+    height: 25%;
+    width: 50%;
+    padding: 0%;
+
+    background-color: #D0DBFF;
+    color: #D0DBFF;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn1 { 
+    position: absolute;
+    /* left: 10%; */
+    top: 5%;
+}
+
+.btn2 {
+    position: absolute;
+    /* left: 20%; */
+    top: 45%;
+}
+
+/* img {
+    height: 40%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    
+    top: 0px;
+} */
+
+.card {
+    background: #D0DBFF;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+.image {
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    
+    top: 0px;
+    background-color: #15223B;
+    height: 70%;
+    width: 100%;
+
+    background-size: cover;
+}
+
+.img1{
+    background-image: url('\images\AbbatijaTadDejr.jpg');
+}
+
+h2 {
+    font-family: Ribeye;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 200%;
+    line-height: 55px;
+
+
+    color: #15223B;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}

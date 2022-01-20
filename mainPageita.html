@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>  
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="mainPage.css"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>    
+      <title>Welcome to Rabat</title>
+      </head>
+      
+      
+<body onload=display_ct();>
+
+  <!--Top Bar-->
+  <div class="topbar">
+  <div id="back"><i class="fa fa-arrow-left fa-5x icon" aria-hidden="true" ></i></div> <!--Back icon-->
+  <div id="home"><i class="fa fa-home fa-5x icon"  aria-hidden="true" ></i></div> <!--Home icon-->
+</div>
+
+
+  <!--Choices-->
+  <div class="choicediv">
+  <div class="box1" onclick="location.href='HistoricalSitesita.html'"><i class="fa fa-university" aria-hidden="true"></i></div> <!--Historical site icon-->
+  <div class="box2" onclick="location.href='LocalInfoita.html'"><i class="fa fa-info" aria-hidden="true"></i></div> <!--Information icon-->
+  <div class="box3" onclick="location.href='Restaurantsita.html'"><i class="fa fa-cutlery" aria-hidden="true"></i></div> <!--Restaurant icon-->
+  <div class="box4" onclick="location.href='transpPageita.html'"><i class="fa fa-bus" aria-hidden="true"></i></div> <!--Transport icon-->
+</div>
+
+<div class="divbar"></div><!--Dividing bar between icons and languages-->
+
+<!--Languages-->
+<div class="langdiv">
+  <div class="mtbox" id="maltese" onclick="location.href='mainPagemlt.html'"><img id="pic" src="Pics\maltaFlag.png"><h1>MT</h1></div>
+  <div class="enbox" id="english" onclick="location.href='mainPage.html'"><img id="pic" src="Pics\ukFlag.png"><h1>EN</h1></div>
+  <div class="itbox" id="italian" onclick="location.href='mainPageita.html'"><img id="pic" src="Pics\italyFlag.jpg"><h1>IT</h1></div>
+</div>
+    
+  <!--Bottom Bar-->
+  <div class="bottombar">
+  <span id='ct' ></span>
+  <span id='cd' ></span>
+  <span id="temp"></span>
+</div>
+
+  <script src="mainPage.js"></script>
+
+</body>
+</html>

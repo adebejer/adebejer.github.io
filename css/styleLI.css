@@ -1,0 +1,520 @@
+body {
+    background: #645D5D;
+    max-width:1200px;
+    max-height: 1920px;
+    overflow: hidden;
+}
+
+.topBar {
+    position: fixed;
+    width: 1080px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+}
+
+#back{
+    position:fixed;
+    left: 10px;
+    top: 5px; 
+}
+
+#home{
+    position: fixed;
+    left: 1000px;
+    top: 5px;
+}
+
+.icon{
+    color: white;
+}
+
+.weather {
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    left: 15px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #D0DBFF;
+}
+
+.time {
+    position: absolute;
+    width: 89px;
+    height: 28px;
+    left: 688px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+}
+
+.sideBar {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+    left: 0px;
+    top: 100px;
+    /* font-size: 10000000px; */
+
+    background: #15223B;
+}
+
+.mainArea {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 720px;
+    height: 95%;
+    left: 360px;
+    top: 100px;
+
+    background: #D0DBFF;
+}
+
+.bottombar{
+    font-family: sans-serif;
+    width: 1080px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom:0%;
+    left: 0%; 
+    font-size: 4vh;
+}
+
+#cd{
+    position: relative;
+    left: 150px;
+}
+
+#temp{
+    position: fixed;
+    right: 5px;
+}
+
+.WignacourMuseum {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 0;
+}
+
+.StPaulsCatacombs {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 0;
+}
+
+.SaintAgathasCatacombs {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 0;
+}
+
+.DomusRomana {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 0;
+}
+
+.museum {
+    position: absolute;
+    /* left: 10%; */
+    top: 20%;
+
+
+    font-size: 180%;
+    /* font-weight: bold; */
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.catacombs {
+    position: absolute;
+    /* left: 3%; */
+    top: 50%;
+
+    font-size: 180%;
+    font-weight: 100px;
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    position: absolute;
+    width: 439px;
+    height: 55px;
+    left: 25%;
+    top: 4%;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+button {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    margin: 10%;
+    border-radius: 20px;
+    
+    background: #D0DBFF;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.text {
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 25px;
+
+    color: #15223B;
+}
+
+.selectionHeader {
+    position: absolute;
+    width: 439px;
+    height: 55px;
+    left: 35%;
+    top: 2%;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+
+
+    color: #15223B;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+.buttons {
+    /* font-size: 180%; */
+    /* font-weight: bold; */
+    position: center;
+    left: 15%;
+    height: 25%;
+    width: 50%;
+    padding: 0%;
+
+    background-color: #D0DBFF;
+    color: #D0DBFF;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn1 { 
+    position: absolute;
+    /* left: 10%; */
+    top: 5%;
+}
+
+.btn2 {
+    position: absolute;
+    /* left: 20%; */
+    top: 45%;
+}
+
+/* img {
+    height: 40%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    
+    top: 0px;
+} */
+
+.card {
+    background: #D0DBFF;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+.image {
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    
+    top: 0px;
+    background-color: #15223B;
+    height: 70%;
+    width: 100%;
+
+    background-size: cover;
+}
+
+.img1{
+    background-image: url('\images\AbbatijaTadDejr.jpg');
+}
+
+h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 200%;
+    line-height: 55px;
+
+
+    color: #15223B;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+.church {
+    top: 0%;
+}
+
+.fa-church {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.convenience {
+    top: 15%;
+}
+
+.fa-shopping-cart {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.health {
+    top: 45%;
+}
+
+.fa-first-aid {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.park {
+    top: 30%;
+}
+
+.fa-tree {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.petrol {
+    top: 60%;
+}
+
+.fa-gas-pump {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.police {
+    top: 75%;
+}
+
+.fa-product-hunt {
+    color: #15223B;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.churchMap{
+    position: relative;
+    top: 20%;
+    /* left: 5.1%; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.churchPic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+    height: 260px;
+
+    border-radius: 20px;
+}
+
+.convenienceMap {
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.conveniencePic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 345px;
+    height: 500px;
+
+    border-radius: 20px;
+}
+
+.parkMap {
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.parkPic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+    height: 300px;
+
+    border-radius: 20px;
+}
+
+.healthMap {
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.healthPic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 555px;
+    height: 370px;
+
+    border-radius: 20px;
+}
+
+.petrolMap {
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.petrolPic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 570px;
+    height: 300px;
+
+    border-radius: 20px;
+}
+
+.policeMap {
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 650px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+
+.policePic {
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 410px;
+    height: 450px;
+
+    border-radius: 20px;
+}
+header{
+    position: absolute;
+    width: 439px;
+    height: 55px;
+    left: 30%;
+    top: 4%;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 55px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.35);
+}

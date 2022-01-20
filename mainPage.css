@@ -1,0 +1,180 @@
+body{
+    background-color: #D0DBFF;
+    color: white;
+    font-family: sans-serif;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    
+}
+
+.topbar{
+    width: 1080px;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+#back{
+    position:fixed;
+    left: 10px;
+    top: 5px; 
+}
+
+#home{
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+
+.icon{
+    color: white;
+}
+
+.bottombar{
+    width: 1080px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom:0%;
+    left: 0%; 
+    font-size: 4vh;
+}
+
+.mtbox{
+    background-color: black;
+    width: 300px;
+    height: 175px;
+    position:fixed;
+    bottom: 200px;
+    left: 25px;
+    border-radius: 10%;
+}
+
+.enbox{
+    background-color: black;
+    width: 300px;
+    height: 175px;
+    position:fixed;
+    bottom: 200px;
+    right: 390px;
+    border-radius: 10%;
+}
+
+.itbox{
+    background-color: black;
+    width: 300px;
+    height: 175px;
+    position:fixed;
+    bottom: 200px;
+    right: 25px;
+    border-radius: 10%;
+}
+
+#pic{
+    position: relative;
+    width: 125px;
+    height: 125px;
+    top:25px;
+    left: 20px;
+}
+
+h1{
+    position: relative;
+    font-size: 4vh;
+    left: 175px;
+    bottom: 130px;;
+    
+}
+
+.divbar{
+    background-color: black;
+    position: fixed;
+    width: 1200px;
+    height: 15px;
+    bottom: 425px;
+    left: 0%;
+}
+
+
+#cd{
+    position: relative;
+    left: 150px;
+}
+
+#temp{
+    position: fixed;
+    right: 5px;
+}
+
+.box1{
+   background-color: black; 
+   width: 350px;
+   height: 350px;
+   position: fixed;
+   top: 300px;
+   left:100px;
+   border-radius: 10%;
+}
+
+.box2{
+    background-color: black; 
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    top: 300px;
+    right:100px;
+    border-radius: 10%;
+}
+
+.box3{
+    background-color: black; 
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    top: 900px;
+    left:100px;
+    border-radius: 10%;
+}
+
+.box4{
+    background-color: black; 
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    top: 900px;
+    right:100px;
+    border-radius: 10%;
+}
+
+.choicediv i{
+    position: relative;
+    font-size:15em;
+    top:50px;
+}
+
+.box1 i{
+    left:50px;
+}
+
+.box2 i{
+    left:140px;
+}
+.box3 i{
+    left:80px;
+}
+.box4 i{
+    left:75px;
+}
+
+.langdiv{
+    width: 1200px;
+    height: 325px;
+    background-color: #15223B;
+    position: fixed;
+    left: 0%;
+    bottom: 100px;
+}
