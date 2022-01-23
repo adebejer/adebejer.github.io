@@ -45,6 +45,10 @@ body{
     font-size: 4vh;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #cd{
     position: relative;
     left: 150px;
